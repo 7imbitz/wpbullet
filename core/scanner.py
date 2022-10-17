@@ -1,15 +1,15 @@
-from Modules import *
-import os
-from core import passive_check
+from Modules import * # Import all from Modules package
+import os # Import os package
+from core import passive_check # Import passive_check.py from core
 from core.passive_check import passive_check as passive_check_processor
-import requests
-import re
-import zipfile
-import io
-from terminaltables import AsciiTable, DoubleTable, SingleTable
-from colorama import Fore, Back, Style
-import shutil
-from . import report
+import requests # Import requests package
+import re # Import regex package
+import zipfile # Import zipfile package
+import io # Import input/output package
+from terminaltables import AsciiTable, DoubleTable, SingleTable # Import package for outputting table view
+from colorama import Fore, Back, Style # Import package for coloring/styling
+import shutil # Import package for copy/move file
+from . import report # Import report.py from core package ("." = current directory)
 
 
 CODE_VULNERABILITIES = [
